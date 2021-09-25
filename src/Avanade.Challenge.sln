@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-AppService", "0-AppService", "{166CE972-DBEC-42AA-B88B-DC206757BAAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Domain", "1-Domain", "{A2BCB9B4-2C44-4E49-AE3B-CEFCD43E6876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Infra", "2-Infra", "{D4FC8AE2-18A1-4B38-B056-16D29A2FEC62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Test", "3-Test", "{5A93ACDF-42F6-43DD-8A1D-934EE64FB0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade.Challenge.Domain", "Avanade.Challenge.Domain\Avanade.Challenge.Domain.csproj", "{EBA02F0B-A078-4908-9ED7-A3BFA0864727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA02F0B-A078-4908-9ED7-A3BFA0864727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA02F0B-A078-4908-9ED7-A3BFA0864727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA02F0B-A078-4908-9ED7-A3BFA0864727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA02F0B-A078-4908-9ED7-A3BFA0864727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBA02F0B-A078-4908-9ED7-A3BFA0864727} = {A2BCB9B4-2C44-4E49-AE3B-CEFCD43E6876}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9CB4493-B4DA-4D26-9433-550574626A9F}
+	EndGlobalSection
+EndGlobal
