@@ -8,8 +8,6 @@ namespace Avanade.Challenge.Domain.Interfaces
     {
         Task<int> AddAsync(T entity);
 
-        Task EditAsync(T entity);
-
         Task DeleteAsync(T entity);
 
         Task<T> GetByIdAsync(int id);

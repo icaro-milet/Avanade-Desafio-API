@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Test", "3-Test", "{5A93AC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avanade.Challenge.Domain", "Avanade.Challenge.Domain\Avanade.Challenge.Domain.csproj", "{EBA02F0B-A078-4908-9ED7-A3BFA0864727}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade.Challenge.Infra", "Avanade.Challenge.Infra\Avanade.Challenge.Infra.csproj", "{979DE43F-AE52-4EB8-970A-EEF92DD4AB83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avanade.Challenge.Infra", "Avanade.Challenge.Infra\Avanade.Challenge.Infra.csproj", "{979DE43F-AE52-4EB8-970A-EEF92DD4AB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade.Challenge.API", "Avanade.Challenge.API\Avanade.Challenge.API.csproj", "{8EACAA9B-77E7-44FE-9495-834E21E29D5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{979DE43F-AE52-4EB8-970A-EEF92DD4AB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979DE43F-AE52-4EB8-970A-EEF92DD4AB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979DE43F-AE52-4EB8-970A-EEF92DD4AB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EACAA9B-77E7-44FE-9495-834E21E29D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EACAA9B-77E7-44FE-9495-834E21E29D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EACAA9B-77E7-44FE-9495-834E21E29D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EACAA9B-77E7-44FE-9495-834E21E29D5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EBA02F0B-A078-4908-9ED7-A3BFA0864727} = {A2BCB9B4-2C44-4E49-AE3B-CEFCD43E6876}
 		{979DE43F-AE52-4EB8-970A-EEF92DD4AB83} = {D4FC8AE2-18A1-4B38-B056-16D29A2FEC62}
+		{8EACAA9B-77E7-44FE-9495-834E21E29D5C} = {166CE972-DBEC-42AA-B88B-DC206757BAAC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9CB4493-B4DA-4D26-9433-550574626A9F}

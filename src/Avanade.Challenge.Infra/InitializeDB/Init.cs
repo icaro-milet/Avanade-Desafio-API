@@ -11,8 +11,8 @@ namespace Avanade.Challenge.Infra.InitializeDB
                 new Person()
                 {
                     Id = 1,
-                    Name = "Levi",
-                    Salary = 1000000000000,
+                    Name = "Ícaro Levi",
+                    Salary = 1000000000000, //God willing
                     Active = true
                 }
             );

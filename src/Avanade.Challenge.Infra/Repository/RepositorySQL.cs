@@ -1,5 +1,7 @@
 ﻿using Avanade.Challenge.Domain.Base;
 using Avanade.Challenge.Domain.Interfaces;
+using Avanade.Challenge.Infra.Context;
+using Microsoft.EntityFrameworkCore;
 using System.Collections;
 using System.Threading.Tasks;
 
@@ -7,34 +9,45 @@ namespace Avanade.Challenge.Infra.Repository
 {
     public class RepositorySQL<T> : IRepository<T> where T : EntityBase
     {
-        public Task<int> AddAsync(T entity)
+        private readonly ChallengeDB _context;
+
+        internal readonly DbSet<T> _tables;
+
+        public RepositorySQL(ChallengeDB context)
         {
-            throw new System.NotImplementedException();
+            _context = context;
+            _tables = _context.Set<T>();
         }
 
-        public Task<int> CountAsync()
+        public async Task<int> AddAsync(T entity)
         {
-            throw new System.NotImplementedException();
+            _tables.Add(entity);
+
+            await _context.SaveChangesAsync();
+
+            return entity.Id;
         }
 
-        public Task DeleteAsync(T entity)
+        public async Task<int> CountAsync()
         {
-            throw new System.NotImplementedException();
+            return await _tables.CountAsync();
         }
 
-        public Task EditAsync(T entity)
+        public async Task DeleteAsync(T entity)
         {
-            throw new System.NotImplementedException();
+            _tables.Remove(entity);
+
+            await _context.SaveChangesAsync();
         }
 
-        public Task<IEnumerable> GetAllAsync()
+        public async Task<IEnumerable> GetAllAsync()
         {
-            throw new System.NotImplementedException();
+            return await _tables.ToListAsync();
         }
 
-        public Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new System.NotImplementedException();
+            return await _tables.FindAsync(id);
         }
     }
 }
